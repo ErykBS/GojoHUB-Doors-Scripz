@@ -1,0 +1,309 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "GojoHUB Doors Script",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "GojoHUB Doors Script",
+   LoadingSubtitle = "by GojoHUB",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "GojoHUB", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "GojoHUB Key System",
+      Subtitle = "Key System",
+      Note = "Join my Discord Server To get Key https://discord.gg/gvcgZBr5Ru", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Villain18364"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab = Window:CreateTab("Custom Mods Doors", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Rusty Hotel",
+   Callback = function()
+   loadstring(game:HttpGet("https://gist.githubusercontent.com/T0mix1608/ff0a607a510996f361c230a2de85f9e8/raw/7096f3796a8feb208b6c0b9029686150e878b7a1/gistfile1.txt", true))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Ranked Noob Achievement (Client Sided)",
+   Callback = function()
+   _G.NoobRankSettings = {
+RankModeAchivementPopupKey = Enum.KeyCode.Z,
+NoobRankLobbyOwned = false --when in video and showing the new achievement, the badge will be darker, and say not owned
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/PublicScripts/refs/heads/main/NoobRankClient"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Backdoors Helper",
+   Callback = function()
+   _G.IY = true -- Infinite Yield
+_G.Bypass = true -- Bypass haste and Backdoor lookman
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Backdoors.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Mischievous portal",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/atb0gK4g"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Magic Book",
+   Callback = function()
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/IdkMyNameLoll/PublicScripts/refs/heads/main/MagicBookRunner"),true))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Guiding Light portal",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/DJ76YV7E"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Doors X Grace",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/PublicScripts/refs/heads/main/GraceEntitiesScript"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Doors Blackhole",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Black%20Hole.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Old Hard Core",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/localplayerr/Doors-stuff/refs/heads/main/Hardcore%20v4%20recreate/main%20code"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Enable Jumps",
+   Callback = function()
+  game.Players.LocalPlayer.Character:SetAttribute("CanJump", true)-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "2017 Graphics",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/2017mode/refs/heads/main/2017MODEtxt.txt"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Xmas Mode",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/xmasmode/refs/heads/main/xmasmode.txt"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Eat Everything",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnyGamingLUA/EatEverythingDOORS/main/obfuscated.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "SpeedRun Timer",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Iliankytb/Iliankytb/main/SpeedrunTimer"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Slow Poke",
+   Callback = function()
+  loadstring(game:HttpGet('https://pastebin.com/UjyL1vqw'))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Firstp",
+   Callback = function()
+  game:GetService("RunService").RenderStepped:Connect(function()
+game.Workspace.CurrentCamera.CFrame = (game.Players.LocalPlayer.Character.Head.CFrame)
+end)-- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Chill Seek",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/chill-seek/refs/heads/main/chillseklal.Pl.txt"))()-- The function that takes place when the button is pressed
+   end,
+})
+local ItemsTab = Window:CreateTab("Items Mods", 4483362458) -- Title, Image
+local Button = ItemsTab:CreateButton({
+   Name = "Grass Tablet",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/grass%20tablet.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "ScreechPlushie",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/CRYiKPZX"))() -- The function that takes place when the button is pressed
+   end,
+}) 
+   local Button = ItemsTab:CreateButton({
+   Name = "Glitch Tablet",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Glitched%20Scanner%20by%20Custom%20Doors"))() -- The function that takes place when the button is pressed
+   end,
+})
+  local Button = ItemsTab:CreateButton({
+   Name = "Flamethrower",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/JohnyGamingLUA/FlamethrowerDOORS/main/obfuscated.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+  local Button = ItemsTab:CreateButton({
+   Name = "Magnet",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua", true))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "Scanner",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "Shears",
+   Callback = function()
+  -- Spawner Customizations --
+_G.Luck = 100 -- The chance of shears spawning in the game
+_G.Spawns = false -- If the shears can spawn naturally in the game
+-- Tool Customizations --
+_G.Durability = 5 -- How much durability it will have until it breaks
+_G.MaxDurability = 5 -- The max durability if you enable regeneration
+_G.InfiniteUses = false -- If The Shears have infinite uses and cannot break
+_G.DurabilityTakenEachSnip = 0.25 -- How much each snip you take with the shears takes from the durability
+_G.SnipSpeed = 1.25 -- The speed of the snipping
+-- Regeneration --
+_G.Regens = true -- If the shears regenerate after being used
+_G.RegenSpeed = 1 -- How fast the shears will regenerate after being used
+_G.RegenAmount = 0.1 -- How much durability it will regenerate after the chosen amount of time
+-- Loadstring --
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "Seek Gun",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "Moon Light Bottle",
+   Callback = function()
+  loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/04d7dd5e02688624b958b8c2604b924c/raw/9e86b34249f44ed2dd433176e67daaf3db30cde8/MoonBottle'))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "Spiral Light Bottle",
+   Callback = function()
+  loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/8b05c837bea9effac2554340465b4be1/raw/3f3be0ee72e7f153db39a16a40fa63dce6cde72d/SpiralBottle'))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "Star Light Barrel",
+   Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "Golden Flashlight",
+   Callback = function()
+ loadstring(game:HttpGet(("https://raw.githubusercontent.com/aadyian9000/the-thing/main/GoldenGummyFlashlight.lua"),true))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ItemsTab:CreateButton({
+   Name = "Shake Lights",
+   Callback = function()
+ local Curious = 'https://github.com/Matthew201322/Doors-Scriptee/blob/Shakelights/Curious%20Shakelight.rbxm?raw=true'
+local Grassful_Flashlight = 'https://github.com/Matthew201322/Doors-Scriptee/blob/Shakelights/Grassful%20Flashlight.rbxm?raw=true'
+local Grassful_Shakelight = 'https://github.com/Matthew201322/Doors-Scriptee/blob/Shakelights/Grassful%20Shakelight.rbxm?raw=true'
+local Guiding = 'https://github.com/Matthew201322/Doors-Scriptee/blob/main/Guiding%20Shakelight.rbxm?raw=true'
+local Mischievous = 'https://github.com/Matthew201322/Doors-Scriptee/blob/Shakelights/Mischievous%20Shakelight.rbxm?raw=true'
+local Wooden = 'https://github.com/Matthew201322/Doors-Scriptee/blob/Shakelights/Wooden%20Shakelight.rbxm?raw=true'
+
+-- the shakelights omg
+
+_G.Model = Guiding
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/Shakelight.luau", true))() -- The function that takes place when the button is pressed
+   end,
+})
+local RiftsTab = Window:CreateTab("Rifts", 4483362458) -- Title, Image
+local Button = RiftsTab:CreateButton({
+   Name = "Virdis Rift",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL", true))()-- The function that takes place when the button is pressed
+   end,
+})
+local EntitySpawnerTab = Window:CreateTab("Entity Spawner", 4483362458) -- Title, Image
+local Button = EntitySpawnerTab:CreateButton({
+   Name = "Giggle",
+   Callback = function()
+  getgenv().GIGGLE_SPAWN_CONFIG = {
+     Damage = 6,
+     AttackingTime = math.random(7, 10), -- The time giggle will be attacking for.
+     FallSpeed = 3,        -- Speed for when giggle spawns, can be mininum 2 and how high you want
+     
+     Stunnable = true,    -- If set to true, Giggle will be stunnable with glowstick
+     StunTime = 5, -- The time giggle will be stun for
+     
+     RagdollThrowForce = 50,    -- The Ragdoll's Force when its thrown
+     RagdollDissapears = true,  -- If set to true the ragdoll will dissapear once giggle finishes attacking.
+  
+     RoomSpawning = {
+          Enabled = true   -- If set to false, giggle will spawn around the player.
+     },
+     
+     PlayerSpawning = { -- This table will be used if Room Spawning is Disabled
+          MinRadius = -20,  -- The minimum distance giggle can spawn from the player.
+          MaxRadius = 20.  --  The maximum distance giggle can spawn from the player.
+     },
+     
+     SpawningKey = { -- Key for Spawning
+          Enabled = false,  -- If enabled once the key is pressed, giggle will spawn.
+          Key = "G"    -- Key that is used for spawning giggle
+     }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Test/refs/heads/main/Doors/GiggleSpawn.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = EntitySpawnerTab:CreateButton({
+   Name = "Troll Face",
+   Callback = function()
+  loadstring(game:HttpGet("https://api.hugebonus.xyz/scripts/TrollFaceSpawner.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local OthersHubsTab = Window:CreateTab("Others Hubs", 4483362458) -- Title, Image
+local Button = OthersHubsTab:CreateButton({
+   Name = "MSPaint Keyless",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local Button = OthersHubsTab:CreateButton({
+   Name = "Lolhax",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxexploiterz/Release-Lolhax/refs/heads/main/LX%20Doors%20v3.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+
