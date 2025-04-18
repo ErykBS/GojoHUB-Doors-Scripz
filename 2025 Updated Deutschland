@@ -17,7 +17,7 @@ local Window = Rayfield:CreateWindow({
 
    Discord = {
       Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
-      Invite = "GojoHUB", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      Invite = "discord.gg/GojoHUB", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
@@ -291,6 +291,19 @@ local Button = EntitySpawnerTab:CreateButton({
    Name = "Troll Face",
    Callback = function()
   loadstring(game:HttpGet("https://api.hugebonus.xyz/scripts/TrollFaceSpawner.lua"))()-- The function that takes place when the button is pressed
+   end,
+})
+local ModifierTab = Window:CreateTab("Modifier", 4483362458) -- Title, Image
+local Button = ModifierTab:CreateButton({
+   Name = "Hotel + Modifier",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Hotel%2B%20Support"))() -- The function that takes place when the button is pressed
+   end,
+})
+local Button = ModifierTab:CreateButton({
+   Name = "Hotel - Modifier",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Hotel-"))() -- The function that takes place when the button is pressed
    end,
 })
 local OthersHubsTab = Window:CreateTab("Others Hubs", 4483362458) -- Title, Image
